@@ -1,0 +1,19 @@
+<query id="insertMember" action="insert">
+    <tables>
+        <table name="member" />
+    </tables>
+    <columns>
+        <column name="member_srl" var="member_srl" filter="number" notnull="notnull" />
+        <column name="user_id" var="user_id" notnull="notnull" />
+        <column name="password" var="password" notnull="notnull" />
+        <column name="user_name" var="user_name" notnull="notnull" minlength="1" maxlength="40" />
+        <column name="nick_name" var="nick_name" notnull="notnull" minlength="1" maxlength="40" />
+        <column name="allow_mailing" var="allow_mailing" default="Y" />
+        <column name="allow_message" var="allow_message" default="Y" />
+        <column name="regdate" var="regdate" default="curdate()" />
+        <column name="change_password_date" var="change_password_date" default="curdate()" />
+        <column name="last_login" var="last_login" default="curdate()" />
+        <column name="is_admin" var="is_admin" default="N" />
+        <column name="list_order" var="list_order" />
+    </columns>
+</query>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <grants />
+    
+    <permissions>
+        <permission action="procSteamxeSignout" target="member" />
+        <permission action="procSteamxeProfileUpdate" target="member" />
+        
+        <permission action="dispSteamxeAdminConfig" target="manager" />
+        <permission action="dispSteamxeAdminManual" target="manager" />
+        
+        <permission action="procSteamxeAdminSaveConfig" target="manager" />
+    </permissions>
+
+	<actions>
+		<action name="dispSteamxeProfile" type="view" index="true" />
+		
+		<action name="procSteamxeSignin" type="controller" />
+		<action name="procSteamxeSignout" type="controller" />
+		<action name="procSteamxeProfileUpdate" type="controller" />
+
+		<action name="dispSteamxeAdminConfig" type="view" admin_index="true" />
+        <action name="dispSteamxeAdminManual" type="view" />
+    
+        <action name="procSteamxeAdminSaveConfig" type="controller" />
+    </actions>
+</module>

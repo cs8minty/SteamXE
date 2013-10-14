@@ -1,0 +1,51 @@
+<article class="page-header alt">
+	<h1><i class="awe-user"></i> {$args->nickname} <small>{$args->steamId}</small></h1>
+</article><!-- {$lang->steamxe_profile} -->
+
+<div class="row-fluid">
+	<article class="span4 data-block">
+		<div class="data-container">	
+			<section class="span12">
+				<div class="thumbnail span6" style="display: inline-block;">
+					<img src="{$args->avatar}" alt="{$args->nickname}">
+				</div>
+
+				<div class="span6">
+					<block cond="$args->signature">{$args->signature}</block>
+					<block cond="!$args->signature">no signature</block>
+				</div>
+			</section>
+
+			<section class="span6">
+				<a href="http://steamcommunity.com/profiles/{$args->communityId}" class="btn btn-primary btn-alt btn-large" target="_blank" style="display: block;">Steam Profile</a>
+				<a href="http://steamrep.com/profiles/{$args->communityId}" class="btn btn-primary btn-alt btn-large" target="_blank" style="display: block;">Steam Rep</a>
+				<a href="backpack/{$args->communityId}" class="btn btn-primary btn-alt btn-large" style="display: block;">Backpack</a>
+			</section>
+
+			<div class="btn-group">
+				<button class="btn btn-flat btn-primary">Left</button>
+				<button class="btn btn-flat btn-primary">Middle</button>
+				<button class="btn btn-flat btn-primary">Right</button>
+			</div>
+		</div>
+	</article>
+
+	<article class="span8 data-block">
+		<div class="data-container">
+			<header>
+				<h2>Achievements</h2>
+				<ul class="data-header-actions">
+					<li><a href="#" class="btn btn-flat btn-primary">More...</a></li>
+				</ul>
+			</header>
+		</div>
+	</article>
+</div>
+
+<article class="page-header alt">
+	<h1><i class="awe-folder-close"></i> Owned Games <small>1,791</small></h1>
+</article>
+
+<article class="page-header alt">
+	<h1><i class="awe-trophy"></i> Achievements <small>59,027</small></h1>
+</article>

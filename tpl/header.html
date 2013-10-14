@@ -1,0 +1,10 @@
+<div class="x_page-header">
+	<h1>
+        <img src="./img/SteamXE.png" alt="{$lang->steamxe}" />
+	</h1>
+</div>
+
+<ul class="x_nav x_nav-tabs" cond="$module_info">
+	<li class="x_active"|cond="$act=='dispSteamxeAdminConfig'"><a href="{getUrl('act','dispSteamxeAdminConfig')}">{$lang->cmd_steamxe_config}</a></li>
+	<li class="x_active"|cond="$act=='dispSteamxeAdminManual'"><a href="{getUrl('act','dispSteamxeAdminManual')}">{$lang->cmd_steamxe_manual}</a></li>
+</ul>

@@ -1,0 +1,5 @@
+<table name="steamxe">
+    <column name="member_srl" type="number" size="11" notnull="notnull" primary_key="primary_key" />
+    <column name="steamid" type="varchar" size="40" notnull="notnull" index="idx_steamid" />
+    <column name="steamid64" type="varchar" size="40" notnull="notnull" index="idx_steamid64" />
+</table>

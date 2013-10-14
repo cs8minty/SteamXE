@@ -1,0 +1,55 @@
+<include target="header.html" />
+
+<section class="section">
+    <h1>{$lang->h1_default_setting}</h1>
+    <form action="./" class="x_form-horizontal" ruleset="saveConfig" method="post">
+        <input type="hidden" name="module" value="steamxe" />
+        <input type="hidden" name="act" value="procSteamxeAdminSaveConfig" />
+        <input type="hidden" name="success_return_url" value="{getUrl('', 'module', 'admin', 'act', $act)}" />
+        <input type="hidden" name="xe_validator_id" value="modules/steamxe/tpl/config/1" />
+        
+        <div class="x_control-group">
+            <label class="x_control-label" for="skin">{$lang->skin}</label>
+            <div class="x_controls">
+                <select id="skin" name="skin" onchange="doGetSkinColorset(this.options[this.selectedIndex].value)">
+                    <option loop="$skin_list=>$key,$val" value="{$key}" selected="selected"|cond="$config->skin==$key">{$val->title} ({$key})</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="x_control-group">
+            <label class="x_control-label" for="apikey">{$lang->steam_apikey}</label>
+            <div class="x_controls">
+                <input type="text" id="apikey" name="apikey" value="{$config->apikey}" size="25" />
+                <p class="x_help-block">{$lang->about_steam_apikey}</p>
+            </div>
+        </div>
+        
+        <div class="btnArea x_clearfix">
+            <span class="x_pull-right"><input class="x_btn x_btn-primary" type="submit" value="{$lang->cmd_save}" /></span>
+        </div>
+    </form>
+</section>
+
+
+<section class="section">
+    <h1>{$lang->h1_advanced_setting}</h1>
+    <form action="./" class="x_form-horizontal" ruleset="saveConfig" method="post">
+        <input type="hidden" name="module" value="steamxe" />
+        <input type="hidden" name="act" value="procSteamxeAdminSaveConfig" />
+        <input type="hidden" name="success_return_url" value="{getUrl('', 'module', 'admin', 'act', $act)}" />
+        <input type="hidden" name="xe_validator_id" value="modules/steamxe/tpl/config/1" />
+        
+        <div class="x_control-group">
+            <label class="x_control-label" for="required_games">{$lang->steam_required_games}</label>
+            <div class="x_controls">
+                <input type="text" id="required_games" name="required_games" value="{$config->required_games}" size="25" />
+                <p class="x_help-block">{$lang->about_steam_required_games}</p>
+            </div>
+        </div>
+        
+        <div class="btnArea x_clearfix">
+            <span class="x_pull-right"><input class="x_btn x_btn-primary" type="submit" value="{$lang->cmd_save}" /></span>
+        </div>
+    </form>
+</section>

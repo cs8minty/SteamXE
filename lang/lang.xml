@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<lang>
+	<item name="steamxe">
+		<value xml:lang="ko"><![CDATA[SteamXE]]></value>
+	</item>
+	
+    <!--SteamXE 설정 페이지-->
+	<item name="cmd_steamxe_config">
+		<value xml:lang="ko"><![CDATA[설정]]></value>
+	</item>
+	<item name="cmd_steamxe_manual">
+		<value xml:lang="ko"><![CDATA[매뉴얼]]></value>
+	</item>
+	
+	<item name="h1_default_setting">
+		<value xml:lang="ko"><![CDATA[기본 설정]]></value>
+	</item>
+	<item name="h1_advanced_setting">
+		<value xml:lang="ko"><![CDATA[고급 설정]]></value>
+	</item>
+	
+	<item name="steam_apikey">
+		<value xml:lang="ko"><![CDATA[Steam Web API Key]]></value>
+	</item>
+	<item name="about_steam_apikey">
+		<value xml:lang="ko"><![CDATA[<a href="http://steamcommunity.com/dev" target="_blank">Steam 웹 API 문서</a>에서 API Key를 발급받은 후 입력해주세요.]]></value>
+	</item>
+	<item name="steam_required_games">
+		<value xml:lang="ko"><![CDATA[요구 게임]]></value>
+	</item>
+	<item name="about_steam_required_games">
+		<value xml:lang="ko"><![CDATA[사이트에 가입하기 위해 요구 되는 게임을 입력해주세요. 게임이 여러개일 경우 |(pipe)로 구분합니다.]]></value>
+	</item>
+	
+    <!--기타-->
+    <item name="steamxe_profile">
+		<value xml:lang="ko"><![CDATA[프로필]]></value>
+	</item>
+</lang>
